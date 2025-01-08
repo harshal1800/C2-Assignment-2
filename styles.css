@@ -1,0 +1,244 @@
+/* Overall Layout */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: #d8dddf;
+    color: #091016;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #1b3249;
+
+}
+ h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #1b3249;
+      
+}
+
+
+/* header */
+header {
+    background-image: url('https://cdn.prod.website-files.com/61ad20e5b695cc23050e9552/650455e3a55850c27136f6b8_travel-bucket-list.jpg');
+    background-size: cover; /* Make sure the image covers the entire header area */
+    background-position: center center; 
+    color: rgb(28, 35, 44);
+    text-align: center;
+    padding: 5px 10px;
+    border: .1px solid #d4d8dc;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 220px; 
+    width: 100%; 
+    margin: 0; 
+    box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: white; 
+}
+
+header p {
+    font-size: 28px;
+    font-weight: normal;
+    color: white; 
+}
+
+/* Navigation */
+nav {
+    background-color: #2c3e50;
+    padding: 5px 10px;
+    border: .1px solid #d4d8dc;
+    border-radius: 0px; /* Added rounded corners */
+    box-shadow: 0 4px 8px rgba(40, 40, 40, 0.1); /* Added shadow */
+    position: sticky;
+    top: 0; /* Stick to the top */
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar stays above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+nav a:hover {
+    color: #7a50b0;
+}
+
+
+/* Blog Post */
+.blog-post {
+    background-color: #faf9f8;
+    margin: 20px auto;
+    padding: 20px;
+    width: 96%;
+    border-radius: 8px;
+    border: .1px solid #d4d8dc;
+    box-shadow: 0 4px 8px rgba(13, 12, 12, 0.1);
+    font-size: 19px;
+    
+}
+/* Add border and shadow to image and video */
+.blog-post img, .blog-post iframe {
+    border: 5px solid #ccc; /* Light gray border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for image and video */
+.blog-post img:hover, .blog-post iframe:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+.blog-post {
+    scroll-margin-top: 70px; /* Set this value to match the navbar height */
+}
+
+
+/* About Me Section */
+#about-me {
+    background-color: #faf9f8;
+    color: rgb(13, 2, 2);
+    padding: 30px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 95%;
+    border: .1px solid #d4d8dc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+    scroll-margin-top: 70px;
+    font-size: 19px;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: left;
+    padding: 20px;
+    width: 99%;
+    margin: 20px auto;
+    box-sizing: border-box;
+    background-color: #faf9f8;
+    border: .1px solid #d4d8dc;
+    border-radius: 8px; /* Added rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+    scroll-margin-top: 70px;
+}
+
+/* Form Inputs */
+.contact-info form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-info form input,
+.contact-info form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.contact-info form button {
+    background-color: #34495e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+
+.contact-info form button:hover {
+    background-color: #2d79c6;
+    
+}
+
+/* Social Media Links */
+.social-media {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.social-media a {
+    color: #34495e;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #8c1609;
+}
+
+
+
+    
+
+
+
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 30px; /* Reduced font size for smaller screens */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Adjusting space between menu items */
+    }
+
+    .contact-info input, .contact-info textarea {
+        width: 100%; /* Ensure form inputs span full width */
+    }
+
+    footer {
+        padding: 15px; /* Reduced padding for footer on small screens */
+    }
+}
+
